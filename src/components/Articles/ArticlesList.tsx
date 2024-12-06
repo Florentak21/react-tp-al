@@ -1,5 +1,4 @@
 import React from "react";
-import "./Articles.css";
 
 interface ArticlesListProps {
   items: {
@@ -13,19 +12,25 @@ interface ArticlesListProps {
 
 const ArticlesList = ({ items }: ArticlesListProps) => {
   return (
-    <div className="articles py-12">
+    <div className="">
       {items.map((item, index) => (
-        <div className="art-card" key={index}>
-          <a href="#">
-            <h4>{item.title}</h4>
-            <div className="art-date">{item.date}</div>
-            <img src={item.image} alt={item.title} className="art-image" />
+        <div className="pb-6" key={index}>
+          <a href="#" className="text-black no-underline">
+            <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
+            <div className="text-xs text-red-500 mb-4">{item.date}</div>
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-auto mb-4"
+            />
           </a>
-          <div className="art-descr">
-            <p>{item.description}</p>
+          <div>
+            <p className="text-sm text-gray-700 leading-6">
+              {item.description}
+            </p>
           </div>
-          <a href="#">
-            <span>{item.readmore}</span>
+          <a href="#" className="text-red-500 font-bold text-sm">
+            {item.readmore}
           </a>
         </div>
       ))}

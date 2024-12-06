@@ -1,6 +1,6 @@
 import React from "react";
-import "./Articles.css";
 import ArticlesList from "./ArticlesList";
+import Pagination from "../Pagination/Pagination";
 
 function Articles() {
   const addarticles1 = [
@@ -57,17 +57,32 @@ function Articles() {
     },
   ];
 
+  const handlePageChange = (page: number) => {
+    console.log("Page actuelle :", page);
+  };
+
   return (
-    <div>
-      <div className="article-part1">
+    <div className="max-w-3xl space-y-12 gap-5 my-5 pr-16 border-r border-gray-300">
+      <div className="w-full border-b border-gray-300">
         <ArticlesList items={addarticles1} />
       </div>
-      <div className="article-part2">
-        <ArticlesList items={addarticles2} />
+
+      <div className="grid grid-cols-2 gap-6">
+        {addarticles2.map((item, index) => (
+          <div key={index} className="border-b border-gray-300">
+            <ArticlesList items={[item]} />
+          </div>
+        ))}
       </div>
-      <div className="article-part2">
-        <ArticlesList items={addarticles3} />
+
+      <div className="grid grid-cols-2 gap-6">
+        {addarticles3.map((item, index) => (
+          <div key={index} className="border-b border-gray-300">
+            <ArticlesList items={[item]} />
+          </div>
+        ))}
       </div>
+      <Pagination totalPages={3} onPageChange={handlePageChange} />
     </div>
   );
 }

@@ -17,7 +17,7 @@ const navElements: NavbarItem = {
 function Header(props: { navElements: NavbarItem; bgImage: string }) {
   return (
     <header
-      className="header flex flex-col h-screen py-10 px-20 bg-cover bg-no-repeat bg-gradient-to-b from-transparent to-black/20"
+      className="header flex flex-col h-full py-10 px-20 bg-cover bg-no-repeat bg-gradient-to-b from-transparent to-black/20"
       style={{ backgroundImage: `url(${props.bgImage})` }}
     >
       <Navbar navbarLogo={props.navElements.navbarLogo} navbarLinks={props.navElements.navbarLinks} />
