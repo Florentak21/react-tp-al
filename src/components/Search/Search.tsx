@@ -2,8 +2,8 @@ import React from 'react';
 
 function Search() {
   return (
-    <div className="p-4 flex items-center justify-center"> {/* Centrer avec flex */}
-      <div className="relative w-full max-w-md ml-6 pr-0 "> {/* Ajouter `ml-4` pour marge gauche */}
+    <div className="p-4 flex items-center justify-center">
+      <div className="relative w-full max-w-md ml-6 pr-0 ">
         <input
           type="text"
           placeholder="Rechercher..."

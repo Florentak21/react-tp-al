@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import AboutContent from "./AboutContent";
+import ContactContent from "./ContactContent";
 
 
 const bgImage: string = 'https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2020/02/lady-in-balcony.jpg';
@@ -18,13 +18,14 @@ const navElements = {
 }
 
 const description = {
-    secondParagraph: 'About Us',
-    thirdParagraph: 'Know More',
+    firstParagraph: 'Get In Touch',
+    secondParagraph: '',
+    thirdParagraph: '',
 };
 
 
 
-function Home()
+function Contact()
 {
    return (
     <div>
@@ -33,10 +34,10 @@ function Home()
             bgImage = {bgImage}
             description={description}
         />
-        <AboutContent />
+        <ContactContent />
         <Footer />
     </div>
    );
 }
 
-export default Home;
+export default Contact;

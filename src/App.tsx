@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LivingRoom from './pages/LivingRoom/LivingRoom';
 import Kitchen from './pages/Kitchen/Kitchen';
 import Outdoors from './pages/Outdoors/Outdoors';
-// import Contact from './pages/Contact/Contact';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/living-room" element={<LivingRoom />} />
           <Route path="/kitchen" element={<Kitchen />} />
           <Route path="/outdoors" element={<Outdoors />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
     </Router>
   );
