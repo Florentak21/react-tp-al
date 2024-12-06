@@ -9,9 +9,9 @@ export interface ContentDescriptionItem {
 
 function ContentDescription({ firstParagraph, secondParagraph, thirdParagraph }: ContentDescriptionItem) {
     return (
-        <div className="flex flex-col gap-5 text-stone-100">
-            {firstParagraph && <p className="text-9xl font-bold">{firstParagraph}</p>}
-            {secondParagraph && <p className="text-9xl font-bold">{secondParagraph}</p>}
+        <div className="flex flex-col gap-5 m-3 text-stone-100">
+            {firstParagraph && <p className="text-7xl font-bold">{firstParagraph}</p>}
+            {secondParagraph && <p className="text-7xl font-bold">{secondParagraph}</p>}
             {thirdParagraph && <p className="text-3xl italic">{thirdParagraph}</p>}
         </div>
     );

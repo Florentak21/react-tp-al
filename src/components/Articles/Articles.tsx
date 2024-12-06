@@ -62,7 +62,7 @@ function Articles() {
   };
 
   return (
-    <div className="max-w-3xl space-y-12 gap-5 my-5 pr-16 border-r border-gray-300">
+    <div className="space-y-12 gap-5 my-5  pr-16 border-r border-gray-300">
       <div className="w-full border-b border-gray-300">
         <ArticlesList items={addarticles1} />
       </div>

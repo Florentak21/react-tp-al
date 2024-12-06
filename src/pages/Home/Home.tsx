@@ -40,12 +40,11 @@ function Home() {
                 description={description}
                 buttonProps={button}
             />
-            <div className="flex w-full">
-                <div className="section-container w-2/3">
+            <div className="flex mx-20">
+                <div className="w-2/3">
                     <Articles />
-                    <Pagination />
                 </div>
-                <div className="flex flex-col w-1/3 ml-auto bg-white p-2">
+                <div className="flex flex-col w-1/3 bg-white p-2">
                     <Search />
                     <RecentPosts />
                     <Tags />
