@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Header from "../../components/Header/Header";
-import Articles from "../../components/Articles/Articles";
 import Footer from "../../components/Footer/Footer";
 import Tags from "../../components/Tags/Tags";
 import RecentPosts from "../../components/RecentPosts/RecentPosts";
 import Search from "../../components/Search/Search";
+import ArticlesRoom from "./ArticleRoom";
 
-const bgImage: string = 'https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/hero02-free-img.jpg';
+const bgImage: string = 'https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/hero01-free-img.jpg';
 
 const navElements = {
     navbarLogo: 'https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/Interior-logo4@2x-free-img.png',
@@ -20,18 +21,22 @@ const navElements = {
 };
 
 const description = {
-    firstParagraph: 'Coming Home Never',
-    secondParagraph: 'Felt So Good!',
-    thirdParagraph: 'Quam a diamlorem explicabo quos fugit, ut aliquam modi.',
+    firstParagraph: 'Living Room',
+    secondParagraph: '',
+    thirdParagraph: (
+        <>
+            <Link to="/">Home</Link> &raquo; Living Room
+        </>
+    ),
 };
 
 const button = {
-    buttonBgColor: '#E70036',
-    buttonContentColor: '#F3DFE3',
-    buttonContent: 'FIND YOUR STYLE',
+    buttonBgColor: '',
+    buttonContentColor: '',
+    buttonContent: '',
 };
 
-function Home() {
+function LivingRoom() {
     return (
         <div>
             <Header 
@@ -42,7 +47,7 @@ function Home() {
             />
             <div className="flex mx-20">
                 <div className="w-2/3">
-                    <Articles />
+                    <ArticlesRoom />
                 </div>
                 <div className="flex flex-col w-1/3 bg-white p-2">
                     <Search />
@@ -55,4 +60,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default LivingRoom;

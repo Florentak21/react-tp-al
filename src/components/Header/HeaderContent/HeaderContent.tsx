@@ -3,33 +3,28 @@ import './HeaderContent.css';
 import ContentDescription, { ContentDescriptionItem } from './ContentDescription/ContentDescription';
 import ContentButton, { ContentButtonItem } from './ContentButton/ContentButton';
 
-const contentDescriptionElements: ContentDescriptionItem = {
-    firstParagraph: ' Coming Home Never',
-    secondParagraph: 'Felt So Good!',
-    thirdParagraph: 'Quam a diamlorem explicabo quos fugit, ut aliquam modi.'
-};
+interface HeaderContentProps {
+    description: ContentDescriptionItem;
+    button?: ContentButtonItem;
+}
 
-const contentButtonElements: ContentButtonItem = {
-    buttonBgColor: '#E80037',
-    buttonContentColor: '#F5F5F4',
-    buttonContent: 'FIND YOUR STYLE'
-};
-  
-function HeaderContent() {
+function HeaderContent({ description, button }: HeaderContentProps) {
     return (
-      <div className='flex flex-col gap-5 mb-40 text-center'>
-        <ContentDescription
-            firstParagraph={contentDescriptionElements.firstParagraph}
-            secondParagraph={contentDescriptionElements.secondParagraph}
-            thirdParagraph={contentDescriptionElements.thirdParagraph}
-        />
+        <div className='flex flex-col gap-5 mb-40 text-center'>
+            <ContentDescription
+                firstParagraph={description.firstParagraph}
+                secondParagraph={description.secondParagraph}
+                thirdParagraph={description.thirdParagraph}
+            />
 
-        <ContentButton
-            buttonBgColor={contentButtonElements.buttonBgColor}
-            buttonContentColor={contentButtonElements.buttonContentColor}
-            buttonContent={contentButtonElements.buttonContent}
-        />
-      </div>
+            {button && (
+                <ContentButton
+                    buttonBgColor={button.buttonBgColor}
+                    buttonContentColor={button.buttonContentColor}
+                    buttonContent={button.buttonContent}
+                />
+            )}
+        </div>
     );
 }
 

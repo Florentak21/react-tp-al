@@ -15,7 +15,7 @@ export interface ContentButtonItem {
             backgroundColor: buttonBgColor,
             color: buttonContentColor,
           }}
-          className='p-3 w-1/5 rounded-sm text-2xl'
+          className='p-5 w-1/5 rounded-sm font-libre text-[#F5F5F5] text-[15px] leading-[15px]'
         >
           {buttonContent}
         </button>

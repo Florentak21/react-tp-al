@@ -1,8 +1,7 @@
 import React from "react";
-import ArticlesList from "./ArticlesList";
-import Pagination from "../Pagination/Pagination";
+import ArticlesList from "../../components/Articles/ArticlesList";
 
-function Articles() {
+function ArticlesKicthen() {
   const addarticles1 = [
     {
       title: "Consectetuer vehicula ab",
@@ -10,7 +9,7 @@ function Articles() {
       image:
         "https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/pic26-free-img.jpg",
       description:
-        "Consectetuer vehicula ab? Blandit? Suspendisse feugiat elementum dictum! Minus eum eveniet, praesentium elementum interdum! Sodales, metus, velit voluptatibus voluptas lorem, etiam voluptate?",
+        "Consectetuer vehicula ab? Blandit? Suspendisse feugiat elementum dictum! Minus eum eveniet, praesentium elementum interdum! Sodales, metus, velit voluptatibus voluptas lorem, etiam vulputate? Aenean possimus montes fugiat […]",
       readmore: "Read More »",
     },
   ];
@@ -26,40 +25,36 @@ function Articles() {
       readmore: "Read More »",
     },
     {
-      title: "Sunt doloremque blandit inven",
-      date: "November 20, 2017 / Living Room",
+      title: "Sodales arcu consequatur consectetur",
+      date: "August 8, 2017 / Kitchen",
       image:
         "https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/pic20-free-img.jpg",
       description:
-        "Nisl vel urna debitis morbi fringilla malesuada maiores optio! Ratione, facilis. Illum accusantium eros sed tristique, cubilia? Vel eu cupiditate. Habitasse urna molestie hendrerit, animi eros.",
+        "Consectetur dolor sit amet adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed non mauris vitae erat consequat auctor eu in elit. Class",
       readmore: "Read More »",
     },
   ];
 
   const addarticles3 = [
     {
-      title: "Taciti hendrerit dis odit incidunt",
-      date: "November 20, 2017 / Living Room",
+      title: "Imperdiet phasellus aliquam",
+      date: "June 17, 2017 / Kitchen",
       image:
-        "https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/hero01-free-img-1024x647.jpg",
+        "https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/06/pic09-free-img.jpg",
       description:
-        "Cillum corrupti accusamus non cumque alias ipsa, platea! Mollis auctor, repellendus sagittis? Corporis dictumst mollis, curae. Eaque, quam per, praesent pretium eu non cumque animi dolorem.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed non mauris vitae erat consequat auctor eu in",
       readmore: "Read More »",
     },
     {
-      title: "Sunt doloremque blandit inven",
-      date: "November 20, 2017 / Living Room",
+      title: "Impedit sit.",
+      date: "October 5, 2010 / Kitchen, Lifestyle",
       image:
-        "https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/sofa-with-pot.jpg",
+        "https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2010/10/furnished-kitchen.jpg",
       description:
         "Nisl vel urna debitis morbi fringilla malesuada maiores optio! Ratione, facilis. Illum accusantium eros sed tristique, cubilia? Vel eu cupiditate. Habitasse urna molestie hendrerit, animi eros.",
       readmore: "Read More »",
     },
   ];
-
-  const handlePageChange = (page: number) => {
-    console.log("Page actuelle :", page);
-  };
 
   return (
     <div className="space-y-12 gap-5 my-5  pr-16 border-r border-gray-300">
@@ -82,9 +77,8 @@ function Articles() {
           </div>
         ))}
       </div>
-      <Pagination totalPages={3} onPageChange={handlePageChange} />
     </div>
   );
 }
 
-export default Articles;
+export default ArticlesKicthen;
