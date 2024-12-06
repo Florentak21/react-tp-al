@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Articles from "../../components/Articles/Articles";
-import Pagination from "../../components/Pagination/Pagination";
 import Footer from "../../components/Footer/Footer";
 import Tags from "../../components/Tags/Tags";
 import RecentPosts from "../../components/RecentPosts/RecentPosts";
