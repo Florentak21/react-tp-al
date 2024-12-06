@@ -8,16 +8,16 @@ function Footer() {
   return (
     <footer className="footer h-[500px]">
       <div className="footer-content">
-        <div className="footer-section about">
-          <h3>ABOUT</h3>
-          <p>
+        <div className="footer-section about text-[#F5F5F5]">
+          <h3 className='font-montserrat text-[21px] leading-[70px]'>ABOUT</h3>
+          <p className='font-libre text-[15px] leading-[24px]'>
             Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa,
             convallis a pellentesque nec, egestas non nisi. Pellentesque in
             ipsum id orci porta dapibus. Sed porttitor lectus nibh.
           </p>
         </div>
         <div className="footer-section social">
-          <h3>SOCIAL</h3>
+          <h3 className=' font-montserrat text-[21px] leading-[70px]'>SOCIAL</h3>
           <div className="social-icons flex">
             <Link
               to="/"
@@ -46,8 +46,8 @@ function Footer() {
           </div>
         </div>
         <div className="footer-section contact">
-          <h3>CONTACT US</h3>
-          <address>
+          <h3 className=' font-montserrat text-[21px] leading-[70px]'>CONTACT US</h3>
+          <address className='font-libre text-[15px] leading-[24px]'>
             500 Terry Francois St.<br />
             San Francisco, CA 94158<br />
             +1-410-555-0134 | info@example.com<br />
@@ -56,15 +56,15 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>
+        <p className='font-libre text-[15px] leading-[24px]'>
           Copyright © 2024 Home Decor | Powered by Home Decor
         </p>
-        <nav>
-          <Link to="/about">About Us</Link>
-          <Link to="/living-room">Living Room</Link>
-          <Link to="/kitchen">Kitchen</Link>
-          <Link to="/outdoors">Outdoors</Link>
-          <Link to="/contact">Contact</Link>
+        <nav className='font-libre text-[15px] leading-[24px]'>
+          <Link to="/about-us" className='hover:no-underline'>About Us</Link>
+          <Link to="/living-room" className='hover:no-underline'>Living Room</Link>
+          <Link to="/kitchen" className='hover:no-underline'>Kitchen</Link>
+          <Link to="/outdoors" className='hover:no-underline'>Outdoors</Link>
+          <Link to="/contact" className='hover:no-underline'>Contact</Link>
         </nav>
       </div>
     </footer>

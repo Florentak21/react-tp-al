@@ -20,19 +20,22 @@ function Navbar({ navbarLogo, navbarLinks }: NavbarItem) {
                 </Link>
             </div>
 
-            <nav className="w-full mx-auto px-4">
-                <div className="flex flex-row items-center gap-5 mt-3 text-white font-bold text-2xl">
-                    {navbarLinks.map((link, index) => (
-                        <Link 
-                            to={`/${link.toLowerCase().replace(/ /g, '-')}`}
-                            key={index}
-                            className="text-stone-100 hover:text-slate-50 no-underline"
-                        >
-                            {link}
-                        </Link>
-                    ))}
-                </div>
-            </nav>
+            <div className="">
+
+                <nav className="w-full mx-auto px-4">
+                    <div className="flex flex-row items-center gap-5 mt-3 font-libre font-bold text-[16px] leading-[70px] text-[#F5F5F5]">
+                        {navbarLinks.map((link, index) => (
+                            <Link 
+                                to={`/${link.toLowerCase().replace(/ /g, '-')}`}
+                                key={index}
+                                className="hover:text-white no-underline"
+                            >
+                                {link}
+                            </Link>
+                        ))}
+                    </div>
+                </nav>
+            </div>
         </div>
     );
 }
