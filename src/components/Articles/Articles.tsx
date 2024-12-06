@@ -1,5 +1,6 @@
 import React from "react";
 import ArticlesList from "./ArticlesList";
+import Pagination from "../Pagination/Pagination";
 
 function Articles() {
   const addarticles1 = [
@@ -56,6 +57,10 @@ function Articles() {
     },
   ];
 
+  const handlePageChange = (page: number) => {
+    console.log("Page actuelle :", page);
+  };
+
   return (
     <div className="max-w-3xl space-y-12 gap-5 my-5 pr-16 border-r border-gray-300">
       <div className="w-full border-b border-gray-300">
@@ -77,6 +82,7 @@ function Articles() {
           </div>
         ))}
       </div>
+      <Pagination totalPages={3} onPageChange={handlePageChange} />
     </div>
   );
 }
