@@ -25,7 +25,7 @@ function Home()
    return (
     <div>
         <Header navElements={navElements} bgImage = {bgImage} />
-        <div className="flex w-[100%]">
+        <div className="flex mx-20">
             <div className="section-container w-2/3">
                 <Articles />
                 <Pagination />
