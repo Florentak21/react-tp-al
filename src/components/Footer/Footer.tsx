@@ -2,11 +2,12 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer className="footer h-[500px]">
-        <div className="footer-content">
+      <div className="footer-content">
         <div className="footer-section about">
           <h3>ABOUT</h3>
           <p>
@@ -18,40 +19,30 @@ function Footer() {
         <div className="footer-section social">
           <h3>SOCIAL</h3>
           <div className="social-icons flex">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
-              >
-                <FontAwesomeIcon icon={faFacebook} size="1x" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
-              >
-                <FontAwesomeIcon icon={faTwitter} size="1x" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
-              >
-                <FontAwesomeIcon icon={faInstagram} size="1x" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white hover:bg-transparent hover:text-white w-1/12 text-black"
-              >
-                <FontAwesomeIcon icon={faPinterest} size="1x" style={{ color: 'inherit' }} />
-              </a>
-
-
+            <Link
+              to="/"
+              className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
+            >
+              <FontAwesomeIcon icon={faFacebook} size="1x" />
+            </Link>
+            <Link
+              to="/"
+              className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
+            >
+              <FontAwesomeIcon icon={faTwitter} size="1x" />
+            </Link>
+            <Link
+              to="/"
+              className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="1x" />
+            </Link>
+            <Link
+              to="/"
+              className="inline-block bg-white hover:bg-transparent hover:text-white w-1/12 text-black"
+            >
+              <FontAwesomeIcon icon={faPinterest} size="1x" style={{ color: 'inherit' }} />
+            </Link>
           </div>
         </div>
         <div className="footer-section contact">
@@ -69,11 +60,11 @@ function Footer() {
           Copyright © 2024 Home Decor | Powered by Home Decor
         </p>
         <nav>
-          <a href="#">About Us</a>
-          <a href="#">Living Room</a>
-          <a href="#">Kitchen</a>
-          <a href="#">Outdoors</a>
-          <a href="#">Contact</a>
+          <Link to="/about">About Us</Link>
+          <Link to="/living-room">Living Room</Link>
+          <Link to="/kitchen">Kitchen</Link>
+          <Link to="/outdoors">Outdoors</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </div>
     </footer>

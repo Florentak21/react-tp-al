@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        libre: ['"Libre Franklin"', 'sans-serif'], // Police Libre Franklin
+        montserrat: ['"Montserrat"', 'sans-serif'], // Police Montserrat
+      },
+    }
   },
   plugins: [],
 }
