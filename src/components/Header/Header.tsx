@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css';
 import Navbar, { NavbarItem } from './Navbar/Navbar';
 import HeaderContent from './HeaderContent/HeaderContent';
 import { ContentDescriptionItem } from './HeaderContent/ContentDescription/ContentDescription';
