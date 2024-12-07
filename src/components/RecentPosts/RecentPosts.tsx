@@ -35,11 +35,13 @@ function RecentPosts() {
   ];
 
   return (
-    <div className="border-2 divide-y divide-gray-300 border-gray-200 py-12 px-10 ml-9 mb-6">
+   <div className="border-4 rounded-md py-12 px-10 ml-9 mb-6">
+     <h2 className="text-left text-3xl mb-2 font-medium">Recent Posts</h2>
+       <div className="divide-y divide-gray-300">
       {posts.map((post, index) => (
         <div
           key={index}
-          className="flex justify-around w-full gap-8 mb-5"
+          className="flex justify-around w-full gap-8 mb-3 p-4"
         >
             <img
               src={post.image}
@@ -58,6 +60,7 @@ function RecentPosts() {
         </div>
       ))}
     </div>
+   </div>
   );
 }
 
