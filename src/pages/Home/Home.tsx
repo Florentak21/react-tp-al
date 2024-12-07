@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Tags from "../../components/Tags/Tags";
 import RecentPosts from "../../components/RecentPosts/RecentPosts";
 import Search from "../../components/Search/Search";
+import FormulaireTest from "../../components/FormulaireTest/FormulaireTest";
 
 const bgImage: string = 'https://websitedemos.net/blog-02/wp-content/uploads/sites/132/2017/11/hero02-free-img.jpg';
 
@@ -48,6 +49,7 @@ function Home() {
                     <Search />
                     <RecentPosts />
                     <Tags />
+                    <FormulaireTest />
                 </div>
             </div>
             <Footer />

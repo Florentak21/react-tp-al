@@ -67,7 +67,7 @@ function Articles() {
         <ArticlesList items={addarticles1} />
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-8">
         {addarticles2.map((item, index) => (
           <div key={index} className="border-b border-gray-300">
             <ArticlesList items={[item]} />
@@ -75,7 +75,7 @@ function Articles() {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-8">
         {addarticles3.map((item, index) => (
           <div key={index} className="border-b border-gray-300">
             <ArticlesList items={[item]} />
