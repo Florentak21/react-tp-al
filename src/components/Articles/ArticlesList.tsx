@@ -16,8 +16,8 @@ const ArticlesList = ({ items }: ArticlesListProps) => {
       {items.map((item, index) => (
         <div className="pb-6" key={index}>
           <a href="#" className="text-black no-underline">
-            <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
-            <div className="text-xs text-red-500 mb-4">{item.date}</div>
+            <h4 className="text-3xl font-bold mb-2">{item.title}</h4>
+            <div className="text-x text-red-500 mb-4">{item.date}</div>
             <img
               src={item.image}
               alt={item.title}
@@ -25,11 +25,11 @@ const ArticlesList = ({ items }: ArticlesListProps) => {
             />
           </a>
           <div>
-            <p className="text-sm text-gray-700 leading-6">
+            <p className="text-md text-gray-700 leading-6">
               {item.description}
             </p>
           </div>
-          <a href="#" className="text-red-500 font-bold text-sm">
+          <a href="#" className="text-red-500 font-bold text-xl">
             {item.readmore}
           </a>
         </div>
