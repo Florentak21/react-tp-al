@@ -41,7 +41,7 @@ function Home() {
                 description={description}
                 buttonProps={button}
             />
-            <div className="flex mx-20">
+            <div className="flex mx-20 p-8">
                 <div className="w-2/3">
                     <Articles />
                 </div>

@@ -3,8 +3,8 @@ import React from "react";
 function Tags() {
 
   return (
-   <div id="secondary" className="space-x-4 border-2 border-gray-200 p-2 ml-9 mb-6 " >
-     <h2 className="text-left font-medium">Tags</h2>
+   <div id="secondary" className="space-x-8 border-4 rounded-md border-gray-200 p-4 ml-9 mb-6 " >
+     <h2 className="text-left text-3xl font-medium p-4">Tags</h2>
      <aside>
         <a href="#" className="inline-block px-4 py-2 mx-1 my-1 border-2 border-gray-400 text-[#E70036] hover:bg-[#E70036] hover:text-white hover:border-none transition duration-300">appliances</a>
         <a href="#" className="inline-block px-4 py-2 mx-1 my-1 border-2 border-gray-400 text-[#E70036] hover:bg-[#E70036] hover:text-white hover:border-none transition duration-300">architecture</a>
